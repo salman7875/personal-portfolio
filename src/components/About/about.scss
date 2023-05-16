@@ -1,0 +1,61 @@
+@import '../../styles.scss';
+
+.active-a {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.inactive-a {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.about {
+  padding: 6rem 0;
+  transition: all 1s ease-in-out;
+
+  @include mobile {
+    padding: 0;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    line-height: 1.4;
+    font-weight: 500;
+
+    @include mobile {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+  }
+
+  .resume {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
+      color: #00ffaa;
+      .icon {
+        transform: translateX(5px);
+      }
+    }
+
+    .icon {
+      font-size: 2rem;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

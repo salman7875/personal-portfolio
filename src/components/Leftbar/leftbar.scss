@@ -1,0 +1,106 @@
+@import '../../styles.scss';
+
+.leftbar {
+  flex: 1;
+  color: #ffffffca;
+  overflow: hidden;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    padding-top: 2rem;
+  }
+
+  .top {
+    margin-bottom: 6rem;
+
+    h1 {
+      font-size: 4.4rem;
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1.6rem;
+      color: #adadad;
+    }
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .center {
+    margin-bottom: 5rem;
+
+    .active-link {
+      color: #fff;
+
+      &::before {
+        width: 7rem;
+        box-shadow: 1px 1px 1px #fff;
+      }
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &::before {
+        display: inline-block;
+        content: '';
+        width: 4rem;
+        height: 1px;
+        background-color: #fff;
+        margin-right: 1rem;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover:before {
+        width: 7rem;
+        box-shadow: 1px 1px 1px #fff;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    @include mobile {
+      margin-bottom: 1rem;
+      display: none;
+    }
+  }
+
+  .bottom {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      li {
+        a {
+          .icon {
+            color: #999;
+            font-size: 3rem;
+            transition: all 0.2s;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

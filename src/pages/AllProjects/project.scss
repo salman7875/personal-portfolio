@@ -1,0 +1,71 @@
+@import '../../styles.scss';
+
+.tableContainer {
+  .table {
+    background: radial-gradient(circle, #223f34, #000000);
+
+    .tableHead {
+      .tableRow {
+        .tableCell {
+          color: #fff;
+          padding: 2rem;
+          font-size: 2.4rem;
+          font-weight: 400;
+
+          @include mobile {
+            &:nth-last-child(2) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .tableBody {
+      .tableRow {
+        .tableCell {
+          color: #fff;
+          padding: 2rem;
+          font-size: 1.6rem;
+          font-weight: 300;
+
+          @include mobile {
+            &:nth-last-child(2) {
+              display: none;
+            }
+          }
+
+          a,
+          &:visited {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover,
+            &:active {
+              color: #fff;
+              font-style: italic;
+            }
+          }
+
+          .tech {
+            width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            span {
+              font-size: 1.2rem;
+              margin-right: 1rem;
+              background-color: rgba(0, 140, 93, 0.195);
+              display: inline-block;
+              color: aquamarine;
+              padding: 0.6rem 1rem;
+              border: none;
+              border-radius: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
