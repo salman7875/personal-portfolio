@@ -11,7 +11,10 @@
   overflow: hidden;
 
   @include mobile {
-    overflow-y: scroll;
+    padding: 0;
+  }
+
+  @include tablet {
     padding: 0;
   }
 
@@ -23,7 +26,11 @@
     justify-content: center;
 
     @include mobile {
-      flex-direction: column;
+      display: block;
+    }
+
+    @include tablet {
+      display: block;
     }
   }
 }

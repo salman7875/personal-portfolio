@@ -1,20 +1,25 @@
+import ecom from './assets/home.png'
+import twitter from './assets/twitter-clone.png'
+
 export const projectData = [
   {
     id: '1',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1qHsyBKd9Tw45xUbBn-bYg-hdFNYAg1HLg&usqp=CAU',
+    img: ecom,
     title: 'Build an E-commerce Website',
-    desc: `The portfolio’s design pays attention to every detail on the page.
-  Although simple, the design is eye-catching: the consistent color
-  scheme eliminates possible distractions, helping visitors have a
-  great user experience on her website.`,
-    techStack: ['React', 'Styled component', 'Node', 'MongoDB', 'Firebase']
+    desc: `E-Commer Website is my final year academic project.
+    The website is an online garment store where a user can register himself/herself and carry out online shopping.
+    There are 2 user roles, admin and consumer. An admin role is designed to perform the CRUD Operations on the
+    website, while the consumer is the end user who can register and login into the website to purchase the Garments.`,
+    techStack: ['React', 'Styled component', 'Node', 'MongoDB', 'Firebase'],
+    link: 'https://github.com/salman7875/e-commerce-mern'
   },
   {
     id: '2',
     title: 'TweetSpot',
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe1qHsyBKd9Tw45xUbBn-bYg-hdFNYAg1HLg&usqp=CAU',
-    desc: `ired of being stuck in a creative rut? 🌀✨ Say hello to #TweetSpot, your ultimate inspiration hub! Get ready to unleash your creativity and discover a world of limitless possibilities. 🚀💡 Join the conversation, share your thoughts, and let the magic unfold. #UnlockYourPotential #FindYourSpark.`,
-    techStack: ['React', 'Node', 'MongoDB', 'Express']
+    img: twitter,
+    desc: `TweetSpot is a Twitter clone website, where a user can Register and login themselves, Post a new tweet, Like a tweet, Comment on a tweet, Follow/Unfollow other users in the app.`,
+    techStack: ['React', 'Node', 'MongoDB', 'Express'],
+    link: 'https://github.com/salman7875/TweetSpot'
   }
 ]
 

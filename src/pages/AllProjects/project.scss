@@ -3,6 +3,7 @@
 .tableContainer {
   .table {
     background: radial-gradient(circle, #223f34, #000000);
+    overflow-x: hidden;
 
     .tableHead {
       .tableRow {
@@ -14,6 +15,12 @@
 
           @include mobile {
             &:nth-last-child(2) {
+              display: none;
+            }
+          }
+
+          @include tablet {
+            &:last-child {
               display: none;
             }
           }
@@ -31,6 +38,12 @@
 
           @include mobile {
             &:nth-last-child(2) {
+              display: none;
+            }
+          }
+
+          @include tablet {
+            &:last-child {
               display: none;
             }
           }

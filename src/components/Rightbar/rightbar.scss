@@ -12,6 +12,12 @@
   }
 
   @include mobile {
-    height: 60vh;
+    height: 47vh;
+    margin-bottom: 2rem;
+  }
+
+  @include tablet {
+    height: 70vh;
+    margin-bottom: 2rem;
   }
 }

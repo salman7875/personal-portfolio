@@ -14,7 +14,7 @@ const Skills = () => {
         const entry = entries[0]
         setMain(entry.isIntersecting)
       },
-      { threshold: 0.3 }
+      { threshold: 0.2 }
     )
     observer.observe(mainRef.current)
   })
@@ -26,6 +26,7 @@ const Skills = () => {
       id='skills'
     >
       <h2>Technologies</h2>
+      <h1>Skills</h1>
       <ul>
         {skills.map(skill => (
           <li key={skill.id}>

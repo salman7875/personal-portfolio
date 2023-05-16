@@ -9,8 +9,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
+    height: 45vh;
     padding-top: 2rem;
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 24vh;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .top {
@@ -30,6 +39,10 @@
     }
 
     @include mobile {
+      margin-bottom: 2rem;
+    }
+
+    @include tablet {
       margin-bottom: 2rem;
     }
   }
@@ -80,6 +93,11 @@
     @include mobile {
       margin-bottom: 1rem;
       display: none;
+    }
+
+    @include tablet {
+      display: none;
+      margin-bottom: 1rem;
     }
   }
 

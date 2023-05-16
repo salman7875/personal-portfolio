@@ -1,3 +1,5 @@
+@import '../../styles.scss';
+
 .pdfContainer {
   background: radial-gradient(circle, #223f34, #000000);
   display: flex;
@@ -6,6 +8,10 @@
   height: fit-content;
   position: relative;
   padding-top: 10rem;
+
+  @include tablet {
+    height: 90vh;
+  }
 
   .btn {
     position: absolute;

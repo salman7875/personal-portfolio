@@ -28,12 +28,13 @@ const Projects = () => {
       ref={projectRef}
       id='projects'
     >
+      <h1>Projects</h1>
       {projectData.map(data => (
-        <a className='card' href='#' key={data.id}>
+        <Link className='card' to={data.link} target='_blank' key={data.id}>
           <img src={data.img} alt={`${data.title} img`} />
           <div className='right'>
             <h4>{data.title}</h4>
-            <p>{data.desc}</p>
+            <p>{data.desc.substring(0, 240).concat('...')}</p>
 
             <div className='bottom'>
               {data.techStack.map(tech => (
@@ -41,7 +42,7 @@ const Projects = () => {
               ))}
             </div>
           </div>
-        </a>
+        </Link>
       ))}
       <Link to='/all-projects' className='resume'>
         <span>View All Projects</span>

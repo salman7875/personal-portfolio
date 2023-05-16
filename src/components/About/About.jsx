@@ -13,7 +13,7 @@ const About = () => {
         setIsVisible(entry.isIntersecting)
       },
       {
-        threshold: 0.4
+        threshold: 0.2
       }
     )
 
@@ -26,6 +26,7 @@ const About = () => {
       ref={aboutRef}
       id='about'
     >
+      <h1>About</h1>
       <p>
         I am <span>Salman Ansari</span>, a passionate <span>Web Developer</span>{' '}
         with a drive for creativity, innovation, and problem-solving. This
