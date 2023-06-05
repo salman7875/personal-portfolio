@@ -76,26 +76,21 @@ export const skills = [
   },
   {
     id: '11',
-    name: 'MySQL',
-    icon: 'https://jigarsable.vercel.app/_next/image?url=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F144%2Fnull%2Fmysql-logo.png&w=256&q=75'
-  },
-  {
-    id: '12',
     name: 'Java',
     icon: 'https://jigarsable.vercel.app/_next/image?url=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F144%2Fnull%2Fjava-coffee-cup-logo--v1.png&w=256&q=75'
   },
   {
-    id: '13',
+    id: '12',
     name: 'Native',
     icon: 'https://jigarsable.vercel.app/_next/image?url=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F144%2Fnull%2Freact-native.png&w=256&q=75'
   },
   {
-    id: '14',
+    id: '13',
     name: 'Git',
     icon: 'https://jigarsable.vercel.app/_next/image?url=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F144%2Fnull%2Fgit.png&w=256&q=75'
   },
   {
-    id: '15',
+    id: '14',
     name: 'Github',
     icon: 'https://jigarsable.vercel.app/_next/image?url=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F144%2Fnull%2Fgit.png&w=256&q=75'
   }
