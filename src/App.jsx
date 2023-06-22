@@ -1,10 +1,17 @@
-import Leftbar from './components/Leftbar/Leftbar'
-import Rightbar from './components/Rightbar/Rightbar'
-import './App.scss'
+import { lazy } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import PdfViewer from './pages/Pdf/PdfViewer'
-import AllProjects from './pages/AllProjects/AllProjects'
-import pdf from './pages/Pdf/salman-resume.pdf'
+// import Leftbar from './components/Leftbar/Leftbar'
+// import Rightbar from './components/Rightbar/Rightbar'
+// import PdfViewer from './pages/Pdf/PdfViewer'
+// import AllProjects from './pages/AllProjects/AllProjects'
+// import pdf from './pages/Pdf/salman-resume.pdf'
+import './App.scss'
+
+const LeftBar = lazy(() => import('./components/Leftbar/Leftbar'))
+const Rightbar = lazy(() => import('./components/Rightbar/Rightbar'))
+const PdfViewer = lazy(() => import('./pages/Pdf/PdfViewer'))
+const AllProjects = lazy(() => import('./pages/AllProjects/AllProjects'))
+const pdf = lazy(() => lazy(() => import('./pages/Pdf/salman-resume.pdf')))
 
 const App = () => {
   const Error = () => {
@@ -15,7 +22,7 @@ const App = () => {
     return (
       <div className='mainContainer'>
         <div className='wrapper'>
-          <Leftbar />
+          <LeftBar />
           <Rightbar />
         </div>
       </div>

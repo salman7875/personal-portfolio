@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { projectData } from '../../data'
 import { ArrowForward } from '@mui/icons-material'
-import './projects.scss'
 import { Link } from 'react-router-dom'
+import './projects.scss'
 
 const Projects = () => {
   const projectRef = useRef()
